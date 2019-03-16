@@ -3,4 +3,7 @@ module.exports = {
     'wesbos',
     'plugin:vue/recommended'
   ],
+  rules: {
+    'no-unused-vars': 0
+  }
 }
