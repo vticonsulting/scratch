@@ -1,11 +1,10 @@
-function sayHi(name) {
-  // error: 'age' is already declared in the upper scope
-  const age = 10
+const defaultAge = 10
+
+function setAge(age = defaultAge) {
+  return age
 }
 
-const age = 12
-
-const things = ['cool', 'doubleee!!!']
+const items = [{ id: 1, isCompleted: true }, { id: 2, isCompleted: false }]
 
 function foo(bar = 'baz') {
   return bar
@@ -20,7 +19,11 @@ const config = {
   },
 }
 
-// error: 'items' is not defined
 const completedItems = items.filter(function(item) {
   return item.isCompleted
 })
+
+console.log(setAge(42))
+console.log(foo())
+console.log(config.color)
+console.log(completedItems)
