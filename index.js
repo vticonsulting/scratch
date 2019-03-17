@@ -1,6 +1,6 @@
 import { getHTML, getTwitterFollowers, getInstagramFollowers } from './lib/scraper'
 
-async function go () {
+async function go() {
   const tPromise = getHTML('https://twitter.com/victortolbert')
   const iPromise = getHTML('https://instagram.com/victortolbert')
   const [instagramHTML, twitterHTML] = await Promise.all([iPromise, tPromise])

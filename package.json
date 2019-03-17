@@ -10,12 +10,12 @@
     "scrape": "node -r esm index.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
     "tailwindcss": "^1.0.0-beta.1"
   },
   "devDependencies": {
-    "axios": "^0.18.0",
     "babel-eslint": "^9.0.0",
-    "cheerio": "^1.0.0-rc.2",
     "eslint": "^5.14.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.1.0",
