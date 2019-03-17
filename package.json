@@ -4,18 +4,25 @@
   "main": "dist/scratch.css",
   "license": "MIT",
   "scripts": {
+    "dev": "nodemon -r esm index.js --ignore db.json",
     "build": "tailwind build css/tailwind.css -o dist/scratch.css",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "scrape": "node -r esm index.js"
+    "scrape": "nodemon -r esm index.js"
   },
   "dependencies": {
-    "tailwindcss": "^1.0.0-beta.1"
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "esm": "^3.2.18",
+    "express": "^4.16.4",
+    "lowdb": "^1.0.0",
+    "node-cron": "^2.0.3",
+    "tailwindcss": "^1.0.0-beta.1",
+    "waait": "^1.0.4"
   },
   "devDependencies": {
-    "axios": "^0.18.0",
     "babel-eslint": "^9.0.0",
-    "cheerio": "^1.0.0-rc.2",
     "eslint": "^5.14.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.1.0",
@@ -27,7 +34,7 @@
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.3.0",
     "eslint-plugin-vue": "^5.2.2",
-    "esm": "^3.2.18",
+    "nodemon": "^1.18.10",
     "prettier": "^1.16.4"
   }
 }
